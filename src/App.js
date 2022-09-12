@@ -1,7 +1,7 @@
 import Header from './components/header/Header';
-import About from './components/about/About'
+import About from './components/main/about/About'
 import './App.css';
-import {Routes, Route, Link} from 'react-router-dom';
+import {Routes, Route} from 'react-router-dom';
 
 
 function App() {
