@@ -9,8 +9,8 @@ function Header() {
     <div className="header">
       <h2> Portfolio </h2>
       <div className="header-content"> 
-        <h1> HOLLAND BLUMER</h1>
-        <Nav/>
+        <div className='header-name'><h1> HOLLAND BLUMER</h1></div>
+        <div className="nav-links"> <Nav/></div>
       </div>
       <div className="icons"> <FontAwesomeIcon icon={faInstagram} size="xl" /> <FontAwesomeIcon icon={faYoutube} size="xl"/></div> 
     </div>

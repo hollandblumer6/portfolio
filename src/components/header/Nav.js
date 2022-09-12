@@ -1,28 +1,28 @@
 import React from 'react'
-import {Routes, Route, Link} from 'react-router-dom';
+import {Routes, Route, NavLink} from 'react-router-dom';
 
 
 function Nav() {
   return (
     <div className="nav">
-         <Link to="/" classname="nav-item">
+         <NavLink to="/" className="nav-item" activeClassName="active" >
           {" "}
           TUTORIALS
-        </Link> 
-        <Link to="/about-me" classname="nav-item">
+        </NavLink> 
+        <NavLink to="/about-me" className="nav-item" activeClassName="active" >
           {" "}
           ABOUT
-        </Link>
-        <Link to="/about-me" classname="nav-item">
+        </NavLink>
+        <NavLink to="/projects" className="nav-item" activeClassName="active">
           {" "}
-          ABOUT
-        </Link>
-        <Link to="/about-me" classname="nav-item">
+          PROJECTS
+        </NavLink>
+        <NavLink to="/wellness" className="nav-item" activeClassName="active" >
           {" "}
-          ABOUT
-        </Link>
+          WELLNESS
+        </NavLink>
     </div>
   )
 }
 
-export default Nav
+export default Nav 
