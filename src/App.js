@@ -1,6 +1,7 @@
 import Header from "./components/header/Header";
 import Tutorials from "./components/main/tutorials/Tutorials";
 import Website from "./components/main/tutorials/code-with-me/Website";
+import Iphone from "./components/main/tutorials/organize/Iphone";
 import About from "./components/main/about/About";
 import Wellness from "./components/main/wellness/Wellness";
 
@@ -27,6 +28,7 @@ function App() {
           <Route path="/wellness" element={<Wellness />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/make-a-website" element={<Website />} />
+          <Route path="/iphone-folders" element={<Iphone />} />
         </Routes>
       </main>
       <footer>

@@ -10,9 +10,9 @@ function About() {
         <article>
           <p>
             {" "}
-            Holland Blumer views technology as the secret ingredient to
-            enhancing communication and sustainability efforts. With two
-            engineering degrees from <b>Northwestern University </b>(B.S.) and
+            Holland Blumer views technology as the platform to enhance
+            communication and sustainability efforts. With two engineering
+            degrees from <b>Northwestern University </b>(B.S.) and
             <b> Dartmouth College </b>(M.Eng) under her belt, experience in
             Silicon Valley, and in the automotive industry, she has a solid
             grasp of the ever-evolving technological field, and her mission is
