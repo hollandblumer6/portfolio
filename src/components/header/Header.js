@@ -1,18 +1,24 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import Nav from "./Nav";
 import Movie from "../../assets/videos/background-video.mp4";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInstagram, faYoutube } from "@fortawesome/free-brands-svg-icons";
-import { faPause } from "@fortawesome/free-solid-svg-icons";
+import { faPause, faPlay } from "@fortawesome/free-solid-svg-icons";
 
 function Header() {
   const videoRef = useRef();
 
+  const [isPlaying, setIsPlaying] = useState(true);
+
+  console.log(videoRef);
+
   const handlePause = () => {
     videoRef.current.pause();
+    setIsPlaying(false);
   };
   const handlePlay = () => {
     videoRef.current.play();
+    setIsPlaying(true);
   };
 
   return (
@@ -31,16 +37,23 @@ function Header() {
         </div>
       </div>
       <div className="right-header">
-        <button className="btn pause-btn" onClick={handlePause}>
-          <FontAwesomeIcon icon={faPause} size="lg" className="pause-btn" />
-        </button>
+        {isPlaying ? (
+          <button className="btn pause-btn" onClick={handlePause}>
+            <FontAwesomeIcon icon={faPause} size="lg" className="pause-btn" />
+          </button>
+        ) : (
+          <button className="btn pause-btn" onClick={handlePlay}>
+            <FontAwesomeIcon icon={faPlay} size="md" className="pause-btn" />
+          </button>
+        )}
+
         <div className="icons">
           {" "}
           <FontAwesomeIcon icon={faInstagram} size="xl" className="icon" />{" "}
           <FontAwesomeIcon icon={faYoutube} size="xl" />
         </div>
+        <div className="place-holder"> </div>
       </div>
-
       <video id="background-video" controls autoPlay loop muted ref={videoRef}>
         {" "}
         <source src={Movie} type="video/mp4"></source>

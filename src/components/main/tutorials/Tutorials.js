@@ -3,13 +3,38 @@ import { Card, Row, Col } from "react-bootstrap";
 import Website from "../../../assets/images/code-with-me/make-a-website.png";
 import { Link } from "react-router-dom";
 import Button from "@material-ui/core/Button";
+import { withStyles } from "@material-ui/core/styles";
+import {
+  faCircleXmark,
+  faLongArrowAltDown,
+} from "@fortawesome/free-solid-svg-icons";
+
+const CustomButton = withStyles({
+  root: {
+    // background: "linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)",
+    background: "rgb(247, 247, 247)",
+    borderRadius: 3,
+    border: 0,
+    color: "black",
+    width: "100%",
+    display: "flex",
+    "font-family": "Arial",
+    "font-size": "11pt",
+    display: "flex",
+    "justify-content": "flex-start",
+    padding: ".5rem",
+  },
+  label: {
+    textTransform: "capitalize",
+  },
+})((props) => <Button {...props} />);
 
 function Tutorials() {
   return (
     <div className="tutorials">
       <section>
+        <h4> Code with me</h4>
         <article>
-          <h3> Code with me</h3>
           <p>
             {" "}
             Curated tutorials that help viewers learn through storing{" "}
@@ -20,7 +45,6 @@ function Tutorials() {
             movement to improve the world.{" "}
           </p>
         </article>
-
         <Row className="gy-4 ms-3 me-3">
           <Col>
             <Card
@@ -31,15 +55,11 @@ function Tutorials() {
               <Card.Body>
                 <Card.Title> Make a wesbsite </Card.Title>
                 <Card.Text> No experience required </Card.Text>
-
-                <Button
-                  component={Link}
-                  to="/make-a-website"
-                  className="nav-item mt-auto read-more"
-                  activeClassName="mt-auto read-more"
-                >
-                  Read
-                </Button>
+                <Card.Footer>
+                  <CustomButton component={Link} to="/make-a-website">
+                    Read
+                  </CustomButton>
+                </Card.Footer>
               </Card.Body>
             </Card>
           </Col>
@@ -87,7 +107,7 @@ function Tutorials() {
               </Card.Body>
             </Card>
           </Col>
-          <Col>
+          {/*    <Col>
             <Card
               className="h-100 shadow-sm bg-white border-light rounded img-fluid"
               style={{ width: "20rem" }}
@@ -105,13 +125,13 @@ function Tutorials() {
                 </Card.Footer>
               </Card.Body>
             </Card>
-          </Col>
+          </Col> */}
         </Row>
       </section>
 
       <section>
+        <h4> Organize tech </h4>
         <article>
-          <h3> Organize tech with me</h3>
           <p>
             {" "}
             Traveling? Waiting? Here are some things you can do to declutter

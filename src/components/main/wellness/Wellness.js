@@ -1,9 +1,25 @@
 import React from "react";
 
-import { Card, Button, Row, Col } from "react-bootstrap";
+import {
+  Card,
+  Button,
+  Row,
+  Col,
+  OverlayTrigger,
+  Popover,
+} from "react-bootstrap";
 import clip from "../../../assets/images/hair-clip.jpg";
 
 function Wellness() {
+  const popover = (
+    <Popover id="popover-basic">
+      <Popover.Header as="h3">Popover right</Popover.Header>
+      <Popover.Body>
+        And here's some <strong>amazing</strong> content. It's very engaging.
+        right?
+      </Popover.Body>
+    </Popover>
+  );
   return (
     <div className="wellness">
       <Row className="gy-4 ms-3 me-3">
@@ -23,26 +39,32 @@ function Wellness() {
         </Col>
 
         <Col>
-          <Card
-            className="h-100 shadow-sm bg-white border-light rounded img-fluid"
-            style={{ width: "16rem" }}
+          <OverlayTrigger
+            placement="right"
+            delay={{ show: 250, hide: 400 }}
+            overlay={popover}
           >
-            <Card.Img
-              variant="top"
-              src="https://static01.nyt.com/images/2019/01/17/dining/mc-red-lentil-soup/merlin_146234352_d7bc8486-b067-4cff-a4c0-7741f166fb60-articleLarge.jpg?w=1280&q=75"
-            />
-            <Card.Body>
-              <Card.Title> Red Lentil Soup </Card.Title>
-              <Card.Text> by Melissa Clark </Card.Text>
-              <br />
+            <Card
+              className="h-100 shadow-sm bg-white border-light rounded img-fluid"
+              style={{ width: "16rem" }}
+            >
+              <Card.Img
+                variant="top"
+                src="https://static01.nyt.com/images/2019/01/17/dining/mc-red-lentil-soup/merlin_146234352_d7bc8486-b067-4cff-a4c0-7741f166fb60-articleLarge.jpg?w=1280&q=75"
+              />
+              <Card.Body>
+                <Card.Title> Red Lentil Soup </Card.Title>
+                <Card.Text> by Melissa Clark </Card.Text>
+                <br />
 
-              <Card.Footer className="mx-auto">
-                <button type="button" className="align-self-end read-more">
-                  Read
-                </button>
-              </Card.Footer>
-            </Card.Body>
-          </Card>
+                <Card.Footer className="mx-auto">
+                  <button type="button" className="align-self-end read-more">
+                    Read
+                  </button>
+                </Card.Footer>
+              </Card.Body>
+            </Card>
+          </OverlayTrigger>
         </Col>
         <Col>
           <Card
