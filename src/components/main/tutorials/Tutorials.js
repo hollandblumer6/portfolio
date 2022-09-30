@@ -33,81 +33,73 @@ function Tutorials() {
   return (
     <div className="tutorials">
       <section>
-        <h4> Code with me</h4>
-        <article>
+        <article className="column-article">
+          <h4> CODE WITH ME </h4>
           <p>
-            {" "}
-            Curated tutorials that help viewers learn through storing{" "}
-            <b> bite-size </b>
+            Curated tutorials that help viewers learn through storing bite-size
             pieces of information in their mental “folders”- kinda like putting
             laundry away in different drawers and checklists. She strongly
             believes everyone should offer their mindful input to the tech
             movement to improve the world.{" "}
           </p>
         </article>
-        <Row className="gy-4 ms-3 me-3">
-          <Col>
-            <Card
-              className="h-100 shadow-sm bg-white border-light rounded img-fluid"
-              style={{ width: "20rem" }}
-            >
-              <Card.Img variant="top" src={Website} />
-              <Card.Body>
-                <Card.Title> Make a wesbsite </Card.Title>
-                <Card.Text> No experience required </Card.Text>
-                <Card.Footer>
-                  <CustomButton component={Link} to="/make-a-website">
-                    Read
-                  </CustomButton>
-                </Card.Footer>
-              </Card.Body>
-            </Card>
-          </Col>
-          <Col>
-            <Card
-              className="h-100 shadow-sm bg-white border-light rounded img-fluid"
-              style={{ width: "20rem" }}
-            >
-              <Card.Img variant="top" src={Website} />
-              <Card.Body>
-                <Card.Title>
-                  {" "}
-                  Add custom url to website with Github pages
-                </Card.Title>
 
-                <br />
+        <Card
+          className="h-100 shadow-sm bg-white border-light rounded img-fluid"
+          style={{ width: "18rem" }}
+        >
+          <Card.Img variant="top" src={Website} />
+          <Card.Body>
+            <Card.Title> Make a wesbsite </Card.Title>
+            <Card.Text> No experience required </Card.Text>
+            <Card.Footer>
+              <CustomButton component={Link} to="/make-a-website">
+                Read
+              </CustomButton>
+            </Card.Footer>
+          </Card.Body>
+        </Card>
 
-                <Card.Footer>
-                  <button type="button" className="mt-auto read-more">
-                    Read
-                  </button>
-                </Card.Footer>
-              </Card.Body>
-            </Card>
-          </Col>
-          <Col>
-            <Card
-              className="h-100 shadow-sm bg-white border-light rounded img-fluid"
-              style={{ width: "20rem" }}
-            >
-              <Card.Img variant="top" src={Website} />
-              <Card.Body>
-                <Card.Title>
-                  {" "}
-                  Make an advance website with navigation{" "}
-                </Card.Title>
+        <Card
+          className="h-100 shadow-sm bg-white border-light rounded img-fluid"
+          style={{ width: "18rem" }}
+        >
+          <Card.Img variant="top" src={Website} />
+          <Card.Body>
+            <Card.Title>
+              {" "}
+              Add custom url to website with Github pages
+            </Card.Title>
 
-                <br />
+            <br />
 
-                <Card.Footer>
-                  <button type="button" className="mt-auto read-more">
-                    Read
-                  </button>
-                </Card.Footer>
-              </Card.Body>
-            </Card>
-          </Col>
-          {/*    <Col>
+            <Card.Footer>
+              <button type="button" className="mt-auto read-more">
+                Read
+              </button>
+            </Card.Footer>
+          </Card.Body>
+        </Card>
+
+        <Card
+          className="h-100 shadow-sm bg-white border-light rounded img-fluid"
+          style={{ width: "18rem" }}
+        >
+          <Card.Img variant="top" src={Website} />
+          <Card.Body>
+            <Card.Title> Make an advance website with navigation </Card.Title>
+
+            <br />
+
+            <Card.Footer>
+              <button type="button" className="mt-auto read-more">
+                Read
+              </button>
+            </Card.Footer>
+          </Card.Body>
+        </Card>
+
+        {/*    <Col>
             <Card
               className="h-100 shadow-sm bg-white border-light rounded img-fluid"
               style={{ width: "20rem" }}
@@ -126,7 +118,6 @@ function Tutorials() {
               </Card.Body>
             </Card>
           </Col> */}
-        </Row>
       </section>
 
       <section>

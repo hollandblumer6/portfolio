@@ -47,7 +47,8 @@ body {
 h1 {
   font-family: "Brink-Bold";
   letter-spacing: 0.3rem;
-  font-size: 2.9rem !important;
+
+  font-size: 2.8rem !important;
 }
 
 .vertical-text {
@@ -112,8 +113,8 @@ h4 {
 }
 
 #background-video {
-  width: 110vw;
-  height: 110vh;
+  width: 100vw;
+  height: 45vh;
   object-fit: cover;
   position: fixed;
   left: 0;
@@ -192,7 +193,8 @@ section {
   display: flex;
   flex-flow: row wrap;
   justify-content: stretch;
-  margin-left: 2px;
+  align-items: flex-start;
+  margin-bottom: 2rem;
 }
 
 section h4 {
@@ -294,11 +296,6 @@ footer {
 
 /* Projects */
 
-.portfolio-content {
-  margin-right: 20px;
-  margin: 0 auto;
-}
-
 /* Tutorials */
 
 /* Make a website  */
@@ -307,4 +304,15 @@ footer {
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: flex-end;
+}
+
+.column-article {
+  display: flex;
+  flex-flow: row;
+  padding: 0;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-top: 3.4rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
 }

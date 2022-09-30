@@ -1,5 +1,5 @@
 import React from "react";
-import Temp from "../../../assets/images/temp-headshot-marsh.JPG";
+import Temp from "../../../assets/images/temp-headshot.png";
 import Test from "./Test";
 
 function About() {
