@@ -31,8 +31,7 @@ function About() {
               Saïd Business School
             </p>
             <p>
-              <b> Meta Front-End Developer Professional Certificate</b> by
-              Coursera
+              <b> Become a Python Developer </b> by LinkedIn
             </p>
             <p>
               <b> Meta Back-End Developer Professional Certificate</b> by
@@ -42,10 +41,9 @@ function About() {
 
           <br />
           <p>
-            <i>
-              {" "}
-              Download resume <a href=""> here</a>{" "}
-            </i>
+            <a href="">
+              <i> Download resume here</i>
+            </a>{" "}
           </p>
         </article>
 
