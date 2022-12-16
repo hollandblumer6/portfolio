@@ -25,7 +25,7 @@ function Header() {
     <div className="header">
       <div className="vertical-text">
         {" "}
-        <h4>Portfolio</h4>{" "}
+        <h4></h4>{" "}
       </div>
       <div className="header-content">
         <div className="header-name">

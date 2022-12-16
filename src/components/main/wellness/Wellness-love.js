@@ -44,11 +44,11 @@ function Wellnesslove() {
 <p> <b> Watermelon + Cucumber Skewers</b> <br/> by Sprouted Kitchen</p>
       </a>
            </div> */}
-        <div>
-          <a href="https://melissawoodhealth.com/food/green-juice-for-clear-skin-good-gut-health/">
+        {/*   <div>
+          <a href="https://buildyourbite.com/wp-content/uploads/2014/10/cleansing-green-juice-recipe-20.jpg">
             <img
               alt="Qries"
-              src="https://melissawoodhealth.com/wp-content/uploads/2019/11/1.jpg"
+              src="https://buildyourbite.com/wp-content/uploads/2014/10/cleansing-green-juice-recipe-20.jpg"
               width="100vw"
               height="150vw"
             />
@@ -58,7 +58,7 @@ function Wellnesslove() {
               Melissa Wood Health
             </p>
           </a>
-        </div>
+        </div> */}
       </section>
 
       <section>
@@ -103,7 +103,7 @@ function Wellnesslove() {
       <section>
         <article>
           <h3> Beauty </h3>
-          <p> Can't live without </p>
+          <p> Products that make me feel fresh and grounded </p>
         </article>
         <div>
           <a href="https://necessaire.com/products/the-body-wash?variant=31475912015985">

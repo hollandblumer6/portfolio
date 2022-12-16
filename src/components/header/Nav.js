@@ -1,18 +1,37 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import "../../App.css";
 
 function Nav() {
+  let activeStyle = {
+    textDecoration: "underline",
+  };
+
   return (
     <ul className="nav">
       <li>
         {" "}
-        <NavLink to="/" className="nav-item" activeClassName="active">
-          {" "}
+        <NavLink
+          to="/"
+          /*  style={({ isActive }) => ({
+            color: isActive ? "greenyellow" : "white",
+            fontWeight: isActive ? "700" : "400",
+            textDecoration: isActive ? "green wavy underline" : "none",
+          })} */
+          className={({ isActive }) =>
+            isActive ? "nav-item active" : "nav-item"
+          }
+        >
           TUTORIALS
         </NavLink>
       </li>
       <li>
-        <NavLink to="/about-me" className="nav-item" activeClassName="active">
+        <NavLink
+          to="/about-me"
+          className={({ isActive }) =>
+            isActive ? "nav-item active" : "nav-item"
+          }
+        >
           {" "}
           ABOUT
         </NavLink>

@@ -3,6 +3,7 @@ import Wellness3 from "../wellness/Wellness3";
 import Portfolio from "../../../assets/images/portfolio-about.png";
 import Temp1 from "../../../assets/images/temp1.png";
 import Temp2 from "../../../assets/images/temp2.png";
+import Helios1 from "../../../assets/images/helios1.png";
 // import { Carousel } from "react-responsive-carousel";
 import { Carousel } from "react-bootstrap";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
@@ -19,22 +20,21 @@ function Projects() {
           <div>
             <p>
               {" "}
-              This full-stack, serverless web application provides a platform
-              for consumers to drive
-              <b> systematic change</b> with suggestions. Unlike platforms such
-              as Yelp, the suggestion algorithm groups together similar
-              suggestions and filters out impractical content. This improves
-              goalsetting.
+              This app simplifies communication efforts between brands and
+              customers. At the moment, its focus is on sustainability. The
+              algorithm groups together similar suggestions and filters out
+              impractical content. It is not only a way for users to voice their
+              opinions but also a way for brands to showcase their efforts.
             </p>
             <p>
               {" "}
               So far, there are two accounts, a user and business account. The
               user account features the brands that the user supports on the
               platform. The business account features the top suggestions that
-              consumers have provided. There is also a section that features the
-              account's <b>sustainability efforts</b>.
+              consumers have provided as well as the milestones set out to
+              address the suggestion.
             </p>
-            <b> Click here to view website </b>
+            <b> Looking to hire back-end engineers </b>
           </div>
         </article>
         <article>
@@ -79,22 +79,15 @@ function Projects() {
               <Carousel.Item>
                 <img
                   className="d-block w-100"
-                  src={Portfolio}
+                  src={Helios1}
                   alt="First slide"
                 />
               </Carousel.Item>
               <Carousel.Item>
                 <img
                   className="d-block w-100"
-                  src={Portfolio}
+                  src={Helios1}
                   alt="Second slide"
-                />
-              </Carousel.Item>
-              <Carousel.Item>
-                <img
-                  className="d-block w-100"
-                  src={Portfolio}
-                  alt="Third slide"
                 />
               </Carousel.Item>
             </Carousel>

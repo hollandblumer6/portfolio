@@ -1,23 +1,42 @@
 import React from "react";
 import Logo from "../../assets/images/logo.png";
+import Coffee from "../../assets/images/coffee.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 
 function Footer() {
   return (
     <div className="footer">
-      <div className="legal">
-        <p>
-          <a href="mailto: hollandblumer6@icloud.com">Contact</a>
-        </p>
-        <p>
-          {" "}
-          <a href="https://www.buymeacoffee.com/hollandblumer">
-            Buy Me a Coffee
+      <div className="footer-icons">
+        <div>
+          <a className="footer-links" href="mailto:hollandblumer6@icloud.com">
+            <FontAwesomeIcon
+              icon={faEnvelope}
+              size="lg"
+              color="#F26344" /* color="#D3D3CE" */
+            />
           </a>
-        </p>
+        </div>
+        <div>
+          <a
+            className="footer-links"
+            href="https://www.linkedin.com/in/hollandblumer/"
+          >
+            <FontAwesomeIcon icon={faLinkedinIn} size="lg" color="#D3D3CE" />
+          </a>
+        </div>
+
+        {/*  <div>
+          {" "}
+          <a
+            className="footer-links"
+            href="https://www.buymeacoffee.com/hollandblumer"
+          ></a>
+        </div> */}
       </div>
-      <div>
-        <p> © Holland Blumer. All Rights Reserved. </p>
-      </div>
+
+      <div> © Holland Blumer. All Rights Reserved. </div>
     </div>
   );
 }

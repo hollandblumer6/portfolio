@@ -6,7 +6,26 @@
 .card .card__name {
   background-color: blueviolet;
 }
-.card .img {
+
+.card-img-top {
   width: 100%;
-  height: 15vw;
+  height: 12vw;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.row {
+  margin-top: 1rem;
+}
+
+.card-footer {
+  border-top: 0px;
+  align-self: flex-end;
+}
+
+.header-box {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  margin-top: 2rem;
 }/*# sourceMappingURL=test.css.map */

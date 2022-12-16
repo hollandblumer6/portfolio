@@ -77,7 +77,8 @@ h4 {
 }
 
 .app {
-  height: 100%;
+  height: 100vh;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: space-between;
@@ -126,6 +127,8 @@ h4 {
 
 .icons {
   width: 4.5vw;
+  width: 3.4rem;
+
   display: flex;
   flex-flow: row wrap;
   text-align: center;
@@ -163,8 +166,8 @@ h4 {
 }
 
 .nav-item {
-  text-decoration: none;
   color: black;
+  text-decoration: none;
 }
 
 .nav-item:hover {
@@ -172,9 +175,9 @@ h4 {
 }
 
 .active {
+  color: rgba(87, 100, 103, 0.5);
   text-decoration: underline;
-  text-underline-offset: 0.15rem;
-  color: rgb(0, 0, 0);
+  text-underline-offset: 3px;
 }
 
 /* Main */
@@ -194,7 +197,7 @@ section {
   flex-flow: row wrap;
   justify-content: stretch;
   align-items: flex-start;
-  margin-bottom: 2rem;
+  margin-top: 0.05rem;
 }
 
 section h4 {
@@ -210,19 +213,34 @@ article {
 
 .profile-image {
   width: 100%;
-  max-width: 400px;
-
-  height: auto;
+  max-width: 27rem;
+  height: 30rem;
   padding-left: 1rem;
   padding-right: 0.1rem;
   margin: 0 auto;
 }
 
+.popover-img {
+  width: 18vw;
+  height: 25vh;
+}
+
+.resume-link {
+  color: #2f2f2f;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+.resume-link:hover {
+  color: rgba(87, 100, 103, 0.5);
+}
+
 /* Footer  */
 
-footer {
+.footer {
   width: 100%;
-  margin-top: 0.1rem;
+  margin-top: 0.02rem;
+  padding: 0 1rem;
   color: rgb(211, 211, 206);
   background: rgb(242, 242, 242);
 
@@ -231,32 +249,45 @@ footer {
 
   background: rgb(227, 222, 218);
   background: rgb(250, 249, 249);
-}
+  background: #f0efee;
+  background: #f3f3ec;
+  background: rgb(247, 247, 247);
+  background: #f6f5f3;
+  background: #f8f7f8;
+  background: #f2f2f2;
 
-.footer {
   display: flex;
-  margin: 1rem;
+  flex-direction: row;
+  align-items: center;
+  height: 10vh;
   justify-content: space-between;
 
-  gap: 2rem 1rem;
-
-  /* Clean this up later */
+  /* // background: #f4f0ec; // v pretty color  */
 }
 
-.footer img {
-  max-width: 10%;
+.footer-links {
+  color: rgba(87, 100, 103, 0.5);
+
+  text-decoration: none;
 }
 
-.footer .legal {
-  width: 20vw;
+.footer-links:hover {
+  color: #ddd;
+}
+
+.footer-icons {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
+  align-items: center;
+  width: 3.4rem;
 }
 
-.footer p {
-  /* border-top: 0.1rem solid rgb(231, 231, 227); */
+.footer-image {
+  width: 18px;
+  height: 22px;
 }
+
 /* Wellness */
 
 .wellness section {
@@ -290,13 +321,36 @@ footer {
   background: none;
   border-radius: 0.2rem;
   border: none;
-  padding: 0.15rem;
+
   color: rgb(52, 51, 51);
+  width: 100%;
+  text-align: left;
+}
+
+.show-more-button {
+  font-weight: 500;
+}
+
+.show-more-button:hover {
+  color: rgba(87, 100, 103, 0.5);
+}
+
+.show-less-button {
+  color: rgba(87, 100, 103, 0.5);
+}
+
+.show-less-button:hover {
+  color: rgba(87, 100, 103, 0.5);
 }
 
 /* Projects */
 
 /* Tutorials */
+
+.tutorials {
+  background: rgb(249, 249, 249);
+  height: 65vh;
+}
 
 /* Make a website  */
 .blog-title {

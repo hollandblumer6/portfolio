@@ -1,8 +1,28 @@
 import React from "react";
 import Temp from "../../../assets/images/temp-headshot.png";
 import Test from "./Test";
+import { OverlayTrigger, Popover } from "react-bootstrap";
+import AlgoTrading from "../../../assets/images/algo-trading.png";
+import PythonDeveloper from "../../../assets/images/python-developer.png";
+import PDF from "../../../assets/holland-blumer-resume.pdf";
 
 function About() {
+  const popover_algo = (
+    <Popover id="popover-basic">
+      <Popover.Body>
+        <img src={AlgoTrading} className="popover-img" />
+      </Popover.Body>
+    </Popover>
+  );
+
+  const popover_python = (
+    <Popover id="popover-basic">
+      <Popover.Body>
+        <img src={PythonDeveloper} className="popover-img" />
+      </Popover.Body>
+    </Popover>
+  );
+
   return (
     <div className="about">
       <section>
@@ -26,13 +46,27 @@ function About() {
           </p>
 
           <p>
-            <p>
-              <b> Certicate in Algorithmic Trading</b> by University of Oxford
-              Saïd Business School
-            </p>
-            <p>
-              <b> Become a Python Developer </b> by LinkedIn
-            </p>
+            <OverlayTrigger
+              placement="top"
+              delay={{ show: 0, hide: 0 }}
+              overlay={popover_algo}
+            >
+              <p>
+                <b> Certicate in Algorithmic Trading</b> by University of Oxford
+                Saïd Business School
+              </p>
+            </OverlayTrigger>
+
+            <OverlayTrigger
+              placement="top"
+              delay={{ show: 0, hide: 0 }}
+              overlay={popover_python}
+            >
+              <p>
+                <b> Become a Python Developer </b> by LinkedIn
+              </p>
+            </OverlayTrigger>
+
             <p>
               <b> Meta Back-End Developer Professional Certificate</b> by
               Coursera (TBD)
@@ -41,8 +75,14 @@ function About() {
 
           <br />
           <p>
-            <a href="">
-              <i> Download resume here</i>
+            {" "}
+            Download resume{" "}
+            <a
+              className="resume-link"
+              href={PDF}
+              download="Holland_Blumer_Resume.pdf"
+            >
+              <b>here</b>
             </a>{" "}
           </p>
         </article>

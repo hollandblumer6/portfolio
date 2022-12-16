@@ -33,18 +33,21 @@ function Tutorials() {
   return (
     <div className="tutorials">
       <section>
+        <h4> COMING SOON in 2023 </h4>
         <article className="column-article">
-          <h4> CODE WITH ME </h4>
           <p>
-            Curated tutorials that help viewers learn through storing bite-size
-            pieces of information in their mental “folders”- kinda like putting
-            laundry away in different drawers and checklists. She strongly
-            believes everyone should offer their mindful input to the tech
-            movement to improve the world.{" "}
+            Curated tutorials that help viewers learn <b>React</b> and{" "}
+            <b>AWS Amplify</b>. Sign up{" "}
+            <b>
+              <a target="_blank" href="https://forms.gle/gY8EH9nrH8PAwqGg6">
+                here
+              </a>
+            </b>{" "}
+            for updates.
           </p>
         </article>
 
-        <Card
+        {/*   <Card
           className="h-100 shadow-sm bg-white border-light rounded img-fluid"
           style={{ width: "18rem" }}
         >
@@ -58,8 +61,8 @@ function Tutorials() {
               </CustomButton>
             </Card.Footer>
           </Card.Body>
-        </Card>
-
+        </Card> */}
+        {/* 
         <Card
           className="h-100 shadow-sm bg-white border-light rounded img-fluid"
           style={{ width: "18rem" }}
@@ -80,8 +83,8 @@ function Tutorials() {
             </Card.Footer>
           </Card.Body>
         </Card>
-
-        <Card
+ */}
+        {/*  <Card
           className="h-100 shadow-sm bg-white border-light rounded img-fluid"
           style={{ width: "18rem" }}
         >
@@ -98,7 +101,7 @@ function Tutorials() {
             </Card.Footer>
           </Card.Body>
         </Card>
-
+ */}
         {/*    <Col>
             <Card
               className="h-100 shadow-sm bg-white border-light rounded img-fluid"
@@ -119,8 +122,7 @@ function Tutorials() {
             </Card>
           </Col> */}
       </section>
-
-      <section>
+      {/* <section>
         <h4> Organize tech </h4>
         <article>
           <p>
@@ -180,7 +182,7 @@ function Tutorials() {
             </Card>
           </Col>
         </Row>
-      </section>
+      </section> */}
     </div>
   );
 }
