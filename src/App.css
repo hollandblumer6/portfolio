@@ -103,6 +103,7 @@ h4 {
 
 .header-name {
   text-align: center;
+  width: 4.5vw;
 }
 
 .header-content {
@@ -126,8 +127,7 @@ h4 {
 }
 
 .icons {
-  width: 5vw;
-
+  width: 4.5vw;
   display: flex;
   flex-flow: row wrap;
   text-align: center;

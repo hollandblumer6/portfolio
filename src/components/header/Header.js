@@ -28,9 +28,7 @@ function Header() {
         <h4>Portfolio</h4>{" "}
       </div>
       <div className="header-content">
-        <div className="header-name">
-          <h1> HOLLAND BLUMER</h1>
-        </div>
+        <div className="header-name"></div>
         <div className="nav-links">
           {" "}
           <Nav />
