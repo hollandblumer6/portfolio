@@ -23,7 +23,7 @@ function Header() {
 
   return (
     <div className="header">
-      <div className="vertical-text"> {/* <h4>Portfolio</h4>{" "} */}</div>
+      <div className="vertical-text"> {/* <h4>Portfolio h</h4>{" "} */}</div>
       <div className="header-content">
         <div className="header-name">
           <h1> HOLLAND BLUMER</h1>
