@@ -136,6 +136,15 @@ h4 {
   align-items: center;
 }
 
+.header-links {
+  text-decoration: none;
+  color: #2f2f2f;
+}
+
+.header-links:hover {
+  text-decoration: none;
+  color: #2f2f2f;
+}
 .pause-btn {
   color: rgba(242, 242, 242, 0.7);
 }

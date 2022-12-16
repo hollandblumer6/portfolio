@@ -49,8 +49,18 @@ function Header() {
 
         <div className="icons">
           {" "}
-          <FontAwesomeIcon icon={faInstagram} size="xl" className="icon" />{" "}
-          <FontAwesomeIcon icon={faYoutube} size="xl" />
+          <a
+            className="header-links"
+            href="https://www.instagram.com/hollandblumer/"
+          >
+            <FontAwesomeIcon icon={faInstagram} size="xl" className="icon" />
+          </a>{" "}
+          <a
+            className="header-links"
+            href="https://www.youtube.com/channel/UC1PqIZ5jGFwBZ0260ImbQpQ"
+          >
+            <FontAwesomeIcon icon={faYoutube} size="xl" />
+          </a>{" "}
         </div>
         <div className="place-holder"> </div>
       </div>

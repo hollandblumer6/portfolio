@@ -23,8 +23,8 @@ function App() {
       </header>
       <main>
         <Routes>
-          <Route path="/" element={<Tutorials />} />
-          <Route path="/about-me" element={<About />} />
+          <Route path="/tutorials" element={<Tutorials />} />
+          <Route path="/" element={<About />} />
           <Route path="/wellness" element={<Wellness />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/make-a-website" element={<Website />} />

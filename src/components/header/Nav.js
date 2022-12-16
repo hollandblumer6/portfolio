@@ -12,7 +12,7 @@ function Nav() {
       <li>
         {" "}
         <NavLink
-          to="/"
+          to="/tutorials"
           /*  style={({ isActive }) => ({
             color: isActive ? "greenyellow" : "white",
             fontWeight: isActive ? "700" : "400",
@@ -27,7 +27,7 @@ function Nav() {
       </li>
       <li>
         <NavLink
-          to="/about-me"
+          to="/"
           className={({ isActive }) =>
             isActive ? "nav-item active" : "nav-item"
           }
