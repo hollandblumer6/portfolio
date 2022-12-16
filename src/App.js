@@ -22,7 +22,7 @@ function App() {
         <Header />
       </header>
       <main>
-        <Routes>
+        <Routes basename="/portfolio">
           <Route path="/tutorials" element={<Tutorials />} />
           <Route path="/" element={<About />} />
           <Route path="/wellness" element={<Wellness />} />
