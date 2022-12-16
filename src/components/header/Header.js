@@ -53,7 +53,7 @@ function Header() {
             <FontAwesomeIcon icon={faInstagram} size="xl" className="icon" />
           </a>{" "}
           <a
-            className="header-links"
+            className="header-links left"
             href="https://www.youtube.com/channel/UC1PqIZ5jGFwBZ0260ImbQpQ"
           >
             <FontAwesomeIcon icon={faYoutube} size="xl" />
