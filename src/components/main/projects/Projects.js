@@ -25,7 +25,7 @@ function Projects() {
               simplifies communication efforts between brands and customers. The
               algorithm groups together similar suggestions from customers and
               filters out trivial content. It also provides a channel for brands
-              to market their their sustainability efforts.
+              to market their sustainability efforts.
             </p>
             <p>
               {" "}
