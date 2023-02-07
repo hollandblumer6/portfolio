@@ -306,7 +306,7 @@ function Wellness() {
           >
             <Card.Img
               variant="top"
-              src="https://cdn.shopify.com/s/files/1/0034/8812/0947/products/01_THEBODYWASH_EU_PDP2_1400x1400.jpg?v=1658378590"
+              src="https://cdn.shopify.com/s/files/1/0034/8812/0947/products/01_THEBODYWASH_EU_PDP_1400x1400.jpg?v=1674176084"
             />
             <Card.Body>
               <Card.Title> The Body Wash </Card.Title>
