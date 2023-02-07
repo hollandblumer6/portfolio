@@ -109,10 +109,11 @@ function Wellnesslove() {
           <a href="https://necessaire.com/products/the-body-wash?variant=31475912015985">
             <img
               alt="Qries"
-              src="https://cdn.shopify.com/s/files/1/0034/8812/0947/products/01_THEBODYWASH_EU_PDP2_1400x1400.jpg?v=1658378590"
+              src="https://cdn.shopify.com/s/files/1/0034/8812/0947/products/01_THEBODYWASH_EU_PDP_1400x1400.jpg?v=1674176084"
               width="130vw"
               height="150vw"
             />
+            {/* comment here to check  */}
             <p>
               {" "}
               <b>
