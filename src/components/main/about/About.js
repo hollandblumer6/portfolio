@@ -1,5 +1,5 @@
 import React from "react";
-import Temp from "../../../assets/images/temp-headshot.png";
+import Temp from "../../../assets/images/temp-headshot 4.JPG";
 import { OverlayTrigger, Popover } from "react-bootstrap";
 import AlgoTrading from "../../../assets/images/algo-trading.png";
 import PythonDeveloper from "../../../assets/images/python-developer.png";

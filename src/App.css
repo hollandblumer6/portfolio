@@ -193,7 +193,8 @@ h4 {
 main {
   margin-top: 0.1em;
   /* margin-top: 0.2em; */
-  background-color: rgb(249, 249, 249);
+  background-color: rgb(249, 249, 249); /*LOVE THIS COLOR */
+  /* Diagonal gradient background */
 }
 
 /* Wellness */
@@ -220,9 +221,8 @@ article {
 }
 
 .profile-image {
-  width: 100%;
-  max-width: 27rem;
-  height: 30rem;
+  width: 40%;
+  height: 30%;
   padding-left: 1rem;
   padding-right: 0.1rem;
   margin: 0 auto;
